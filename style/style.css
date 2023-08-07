@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+}
+
+/* Mise en page du header */
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #5deabb;
+}
+
+ul{
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+li{
+    list-style-type: none;
+}
+a{
+    color:#000000;
+    text-decoration: none;
+}
+fieldset{
+    justify-content: space-between;
+    width: 30%;
+}
