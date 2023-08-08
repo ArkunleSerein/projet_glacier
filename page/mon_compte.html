@@ -29,17 +29,28 @@
     </header>
     <h2>Mon compte</h2>
 
-    <!-- création du formulaire de création de compte -->
+<!-- création du formulaire de création de compte -->
 
     <form action="form">
         <fieldset> 
-            <label for="email-label">Email : </label>
-            <input class="input" id="email-label" name="email-label" placeholder="Votre Email" type="email" required>
-            <label for="motdepasse">Mot de passe : </label>
-            <input type="password" id="motdepasse" name="motdepasse" required>
+            <label for="email">Email : </label>
+            <input class="input" id="email" name="email" placeholder="Votre Email" type="email" required>
+            <label for="password">Mot de passe : </label>
+            <input type="password" id="password" name="password" required>
             <input type="reset" value="reset">
+            <button onclick="ajouterInfo()">Valider</button>
         </fieldset>
     </form>
+
+<!-- création d'un script d'ajout d'information -->
+
+    <div id="infos">
+        <!-- Ajout d'information -->
+    </div>
+
+    <button onclick="supprimerInfo()">Supprimer tout</button>
 </body>
+
+<script src="/script/script.js"></script>
 
 </html>

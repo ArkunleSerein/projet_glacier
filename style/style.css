@@ -29,7 +29,14 @@ a{
     color:#000000;
     text-decoration: none;
 }
+
+/* Mise en page du formulaire */
+
 fieldset{
-    justify-content: space-between;
-    width: 30%;
+    font-weight: bold;
+    background-color: #898f8d;
+    width: 35%;
+}
+input{
+    justify-content: space-around;
 }
