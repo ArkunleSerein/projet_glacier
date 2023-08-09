@@ -1,42 +1,73 @@
-body{
+body {
+    background-color: #cfe9e0;
     margin: 0;
 }
 
-/* Mise en page du header */
-
+/* Alignement du contenu du header */
 header {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     background-color: #5deabb;
 }
 
-ul{
+.logo {
+    width: 100px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
     color: #000000;
     font-weight: bold;
     font-size: 22px;
-    width: 70%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-}
-li{
     list-style-type: none;
+    display: flex;
+    align-items: center; /* Alignement vertical des éléments */
 }
-a{
-    color:#000000;
+
+li {
+    margin: 0 50px; /* Espacement horizontal entre les éléments */
+}
+
+a {
+    color: #000000;
     text-decoration: none;
 }
 
-/* Mise en page du formulaire */
+h2 {
+    text-align: center;
+}
 
+
+/* Mise en page du formulaire */
+form, div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 fieldset{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
     font-weight: bold;
-    background-color: #898f8d;
-    width: 35%;
+    background-color: #30c9933b;
+    width: 30%;
 }
-input{
-    justify-content: space-around;
+div{
+    width: 100%;
 }
+
+button{
+    border-radius: 5px;
+}
+.buttondeleteall{
+    width: 100%;
+}
+

@@ -1,38 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Congélateur</title>
     <link rel="stylesheet" href="/style/style.css">
 </head>
+
 <body>
-        <!-- création du header -->
+    <!-- création du header -->
 
-        <header>
-            <h1>
-                <a href="index.html">Glacier</a>
-            </h1>
-    
-            <!-- barre de navigation -->
-    
-            <ul>
-                <li><a href="glace.html">Glace</a></li>
-                <li><a href="parfum.html">Parfum</a></li>
-                <li><a href="congelateur.html">Congélateur</a></li>
-                <li><a href="role.html">Rôle</a></li>
-                <li><a href="mon_compte.html">Mon compte</a></li>
-            </ul>
-        </header>
-        <h2>Congélateur</h2>
+    <header>
+        <a href="index.html"> <img class="logo" src="/image/logo_glace.png" alt="Mon logo"></a>
 
-        <form action="form">
-            <fieldset>
-                <label for="congelateur">Ajout d'un nouveau Congélateur : </label>
-                <input type="text">
-                <input type="submit" value="Envoyer">
-            </fieldset>
-        </form>
+        <!-- barre de navigation -->
 
+        <ul>
+            <li><a href="glace.html">Glace</a></li>
+            <li><a href="parfum.html">Parfum</a></li>
+            <li><a href="congelateur.html">Congélateur</a></li>
+            <li><a href="role.html">Rôle</a></li>
+            <li><a href="mon_compte.html">Mon compte</a></li>
+        </ul>
+    </header>
+    <h2>Congélateur</h2>
+
+    <form action="form">
+        <fieldset>
+            <label for="congelateur">Ajout d'un nouveau Congélateur : </label>
+            <input type="text" id="congelateur" name="congelateur">
+            <button type="button" onclick="ajouterInfoCongelateur()">Valider</button>
+
+        </fieldset>
+    </form>
+
+    <div id="infoCongelateur">
+        <!-- Les informations seront affichées ici -->
+    </div>
+    <div>
+        <fieldset>
+            <button class="buttondeleteall" onclick="supprimerTout()">Supprimer tout</button>
+        </fieldset>
+    </div>
+    <script src="/script/scriptCongelateur.js"></script> <!-- Pour la page Glace -->
 </body>
+
 </html>

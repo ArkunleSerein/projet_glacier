@@ -1,34 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glace</title>
     <link rel="stylesheet" href="/style/style.css">
 </head>
-<body>
-        <!-- création du header -->
 
-        <header>
-            <h1>
-                <a href="index.html">Glacier</a>
-            </h1>
-    
-            <!-- barre de navigation -->
-    
-            <ul>
-                <li><a href="glace.html">Glace</a></li>
-                <li><a href="parfum.html">Parfum</a></li>
-                <li><a href="congelateur.html">Congélateur</a></li>
-                <li><a href="role.html">Rôle</a></li>
-                <li><a href="mon_compte.html">Mon compte</a></li>
-            </ul>
-        </header>
-        <h2>Glace</h2>
+<body>
+    <!-- création du header -->
+
+    <header>
+        <a href="index.html"> <img class="logo" src="/image/logo_glace.png" alt="Mon logo"></a>
+
+        <!-- barre de navigation -->
+
+        <ul>
+            <li><a href="glace.html">Glace</a></li>
+            <li><a href="parfum.html">Parfum</a></li>
+            <li><a href="congelateur.html">Congélateur</a></li>
+            <li><a href="role.html">Rôle</a></li>
+            <li><a href="mon_compte.html">Mon compte</a></li>
+        </ul>
+    </header>
+    <h2>Glace</h2>
+
+    <form action="form">
         <fieldset>
             <label for="glace">Ajout d'une nouvelle glace : </label>
-            <input type="text">
-            <input type="submit" value="Envoyer">
+            <input type="text" id="glace" name="glace">
+            <button type="button" onclick="ajouterInfoGlace()">Valider</button>
         </fieldset>
+    </form>
+
+    <div id="infoGlace">
+        <!-- Les informations seront affichées ici -->
+    </div>
+    <div>
+        <fieldset>
+            <button class="buttondeleteall" onclick="supprimerTout()">Supprimer tout</button>
+        </fieldset>
+    </div>
+    <script src="/script/scriptGlace.js"></script> <!-- Pour la page Glace -->
 </body>
+
 </html>

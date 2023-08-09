@@ -1,21 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon compte</title>
+    <title>Mon Compte</title>
     <link rel="stylesheet" href="/style/style.css">
 </head>
 
 <body>
-
     <!-- création du header -->
 
     <header>
-        <h1>
-            <a href="index.html">Glacier</a>
-        </h1>
+            <a href="index.html"> <img class="logo" src="/image/logo_glace.png" alt="Mon logo"></a>
+    
 
         <!-- barre de navigation -->
 
@@ -27,30 +25,29 @@
             <li><a href="mon_compte.html">Mon compte</a></li>
         </ul>
     </header>
-    <h2>Mon compte</h2>
-
-<!-- création du formulaire de création de compte -->
+    <h2>Mon Compte</h2>
 
     <form action="form">
-        <fieldset> 
+        <fieldset>
+            <label for="username">Nom d'utilisateur : </label>
+            <input type="text" id="username" name="username">
             <label for="email">Email : </label>
-            <input class="input" id="email" name="email" placeholder="Votre Email" type="email" required>
+            <input type="text" id="email" name="email">
             <label for="password">Mot de passe : </label>
-            <input type="password" id="password" name="password" required>
-            <input type="reset" value="reset">
-            <button onclick="ajouterInfo()">Valider</button>
+            <input type="password" id="password" name="password">
+            <button type="button" onclick="ajouterInfoMonCompte()">Valider</button>
         </fieldset>
     </form>
 
-<!-- création d'un script d'ajout d'information -->
-
-    <div id="infos">
-        <!-- Ajout d'information -->
+    <div id="infoMonCompte">
+        <!-- Les informations seront affichées ici -->
     </div>
-
-    <button onclick="supprimerInfo()">Supprimer tout</button>
+    <div> 
+        <fieldset>
+            <button class="buttondeleteall" type="button" onclick="supprimerToutMonCompte()">Supprimer tout</button>
+        </fieldset>
+    </div>
+    <script src="/script/scriptMonCompte.js"></script>
 </body>
-
-<script src="/script/script.js"></script>
 
 </html>
